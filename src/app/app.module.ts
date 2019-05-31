@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Library1Module } from 'library1';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [Library1Module],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

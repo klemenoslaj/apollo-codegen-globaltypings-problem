@@ -1,0 +1,13 @@
+enum ExampleEnum {
+  exampleKey1
+  exampleKey2
+}
+
+type ExampleType {
+  id: ID!
+  exampleEnum: ExampleEnum!
+}
+
+type Query {
+    ExampleType(id: ID!): ExampleType
+}
